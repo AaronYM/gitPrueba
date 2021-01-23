@@ -3,7 +3,7 @@ class conexion
 {
 	public static function f_conexion()
 	{
-		$nombre_BD='transpu';
+		$nombre_BD='sisdocmuni01';
 		$contraseña='';
 		$server='localhost';
 		$usuario='root';

@@ -70,7 +70,7 @@
               
                 <div class="form-group col-md-6">
                   <label class="h6" for="">Buscar</label>
-                  <input type="text" class="form-control form-control-sm" id="buscar" autofocus>
+                  <input type="text" class="form-control form-control-sm" id="buscar"  name="buscar">
                   
                   <table id="tabla" class="scrolldown" hidden=''>
                   <thead>
@@ -147,7 +147,7 @@
           
          
           $('#tabla').attr('hidden','');
-          $('#buscar').val(r);
+          document.getElementById('buscar').value=r;
         },
         error: function(){
           alert("Error de protocolo HTTP");
