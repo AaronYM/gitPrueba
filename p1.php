@@ -8,5 +8,5 @@ include_once("conexion.php");
         $ejecutar = mysqli_query($conectar, $query);
         $row=mysqli_fetch_array($ejecutar);
         
-        $nom=$row['nomSol'];
+        $nom=$row['nomComSol'];
 		echo $nom;

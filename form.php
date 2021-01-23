@@ -22,7 +22,7 @@
           width: 90%;
             border-collapse: collapse; 
             border-spacing: 0; 
-            border: 1px solid black; 
+            border: 1px solid #ccc; 
             
             
         } 
@@ -35,7 +35,7 @@
         table.scrolldown tbody { 
               
               /* Set the height of table body */ 
-              height: 50px;  
+              height: 60px;  
                 
               /* Set vertical scroll */ 
               overflow-y: auto; 
@@ -122,7 +122,7 @@
         $.ajax({
         type:'POST',
         url:'p.php',
-        data:'busqueda='+busqueda,
+        data:'busqueda='+busqueda.trim(),
         success:function(r){
           
           $('#tbodyTabla').html(r);
