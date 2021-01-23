@@ -65,7 +65,7 @@
             <b>Registrar Usuario </b><cite>/ Completa el formulario para crear un usuario.</cite>
           </div>
           <div class="card-body">
-            <form class="formulario" method="post" action="">
+            <form class="formulario" method="post" action="" autocomplete="off">
               <div class="row">
               
                 <div class="form-group col-md-6">
@@ -108,7 +108,7 @@
     <script src='popperjs/popper.min.js'></script>
     <script src='bootstrap4/js/bootstrap.min.js'></script>
     <script>
-      
+     
 	$("#buscar").keyup(function(){
 			
   
@@ -147,7 +147,7 @@
           
          
           $('#tabla').attr('hidden','');
-          document.getElementById('buscar').value=r;
+          document.getElementById('buscar').value=r.trim();
         },
         error: function(){
           alert("Error de protocolo HTTP");
